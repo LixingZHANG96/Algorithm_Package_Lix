@@ -11,6 +11,7 @@ def Merge_Sort(A, start=1, end=-1):
         Merge_Sort(A, start, middle)
         Merge_Sort(A, middle+1, end)
         Merge(A, start, middle, end)
+        print("After Merge:\t",A)
 
 
 def Merge(A, start, middle, end):
@@ -29,11 +30,11 @@ def Merge(A, start, middle, end):
         else:
             A[k] = R[j]
             j += 1
-    print(A)
 
 
 if __name__=='__main__':
-    print("Input Array:", "(3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5)")
-    A_in = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+    import random
+    A_in = [random.randint(10, 99) for i in range(10)]
+    print("Input Array:\t", A_in,'\n')
     Merge_Sort(A_in)
-    print("After Sorting:", A_in)
+    print("\nAfter Sorting:\t", A_in)
