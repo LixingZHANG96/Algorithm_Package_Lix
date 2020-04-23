@@ -1,18 +1,17 @@
 ## Insertrion Sort
 ### 1. Problem Set-up
 
--Input: A sequence of n numbers (a1,a2,...,an)
-![Polynomial](./polynomial_expression.jpg)
--Output: A permutation (reordering) of the input sequence such
-that a1<a2<...<an
+-Input: The value for **x** and all its efficients.
 
--Basic idea: During every iteration, filter the smallest value in the remaining sequence and sort it to the right place.
+-Output: Calculate the polynomial expression:
+
+![Polynomial](./polynomial_expression.jpg)
+
 ### 2. Pseudocode
 ```
-*BUBBLE-SORT(A)*
-for i=1 to A.length-1
-  for j = A.length downto i+1
-    if A[j]<A[j-1] then
-      exchange A[j] with A[j-1]
+*HORNELS_RULE(x, A)*
+y = 0
+for i = n downto 0
+  y = A[i] + x * y
 ```
 ### 3. Algorithm Analysis
