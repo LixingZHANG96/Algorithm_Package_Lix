@@ -1,4 +1,4 @@
-## Insertrion Sort
+## Horners_Rule
 ### 1. Problem Set-up
 
 -Input: The value for **x** and all its efficients.
